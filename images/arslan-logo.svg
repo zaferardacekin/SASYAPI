@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="katman_2" data-name="katman 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 149.06 214.45">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 16.38px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fbb03b;
+      }
+
+      .cls-4 {
+        font-size: 29.92px;
+      }
+
+      .cls-5 {
+        font-family: Poppins-Bold, Poppins;
+        font-weight: 700;
+      }
+
+      .cls-6 {
+        font-size: 35.1px;
+      }
+    </style>
+  </defs>
+  <g id="katman_1" data-name="katman 1">
+    <g>
+      <text class="cls-5" transform="translate(1.69 184.86)"><tspan class="cls-1"><tspan class="cls-6" x="0" y="0">ARSLAN</tspan><tspan class="cls-4" x="139.35" y="0"> </tspan></tspan><tspan class="cls-2"><tspan x="13.82" y="19.66">GAYRİMENKUL</tspan></tspan></text>
+      <g>
+        <path class="cls-3" d="M74.53,0L0,143.14h17.49c3.84-7.38,51.75-99.38,57.04-109.54,5.54,10.63,52.98,101.74,57.04,109.54h17.49L74.53,0Z"/>
+        <path class="cls-3" d="M120.96,143.14H28.1l46.43-89.17,23.19,44.53h-17.5l-5.69-10.93-20.86,40.06h41.72l-3.35-6.44h-17.51v-15.51h26.91c4.93,9.44,14.51,27.85,19.52,37.47Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

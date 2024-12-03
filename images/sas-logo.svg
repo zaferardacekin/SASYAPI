@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="katman_2" data-name="katman 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103.11 210.61">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-size: 35px;
+      }
+
+      .cls-2 {
+        font-family: Poppins-ExtraBold, Poppins;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        font-size: 15px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #fbb03b;
+      }
+    </style>
+  </defs>
+  <g id="katman_1" data-name="katman 1">
+    <g>
+      <g id="katman_1-2" data-name="katman 1">
+        <g>
+          <circle class="cls-4" cx="49.65" cy="72.05" r="19.73"/>
+          <path class="cls-4" d="M87.23,66.97v46.51h-16.2l-4.73-4.73c-3.25,1.85-9.16,4.59-16.87,4.73-15.9.3-26.31-10.7-28.12-12.67L0,121.35c4.19,4.5,22.16,22.78,49.43,23.26,6.35.11,22.64.39,36.68-11.39,3.26-2.74,16.87-14.15,17-33.2.14-19.47-13.91-31.42-15.88-33.04h0Z"/>
+          <path class="cls-4" d="M77.21,43.8l21.65-21.81C95,17.87,77.66.31,51.22,0c-5.43-.06-28.03-.32-41.86,16.36C6.92,19.32-.75,28.57.06,42.03c.81,13.37,9.42,21.77,11.55,23.74.43-3.19,2.78-18.13,16.04-27.91,2.73-2.01,10.89-7.85,22.62-7.54,15.76.42,25.38,11.6,26.94,13.47h0Z"/>
+        </g>
+      </g>
+      <text class="cls-2" transform="translate(13.3 183.37)"><tspan class="cls-1"><tspan x="0" y="0">SAS </tspan></tspan><tspan class="cls-3"><tspan x="20.25" y="18">YAPI</tspan></tspan></text>
+    </g>
+  </g>
+</svg>
