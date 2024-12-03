@@ -116,10 +116,15 @@ a:focus {
 }
 
 .hero_area .hero_bg_box video {
-  width: auto;
-  height: auto;
-  min-width: 100%;
-  min-height: 100%;
+  position: absolute; /* Video kutusunun konumunu ayarlamak için */
+  top: 50%; /* Ortalamak için yukarıdan %50 */
+  left: 50%; /* Ortalamak için soldan %50 */
+  transform: translate(-50%, -50%); /* Tam merkezi hedefler */
+  width: 100vw; /* Video genişliği viewport genişliğine ayarlanır */
+  height: 100vh; /* Video yüksekliği viewport yüksekliğine ayarlanır */
+  object-fit: cover; /* Video içerik oranını koruyarak ekranı doldurur */
+  object-position: center; /* Video içeriğini merkeze hizalar */
+  z-index: -1; /* İçeriğin arkasında kalması için */
 }
 
 .hero_area .hero_bg_box::before {
@@ -261,9 +266,38 @@ a:focus {
 }
 
 @media (max-width: 767px) {
+  .slider_section .detail-box {
+    text-align: center; 
+  }
+  .slider_section p{
+    text-align: center;
+  }
   .navbar-brand {
       justify-content: center;
   }
+
+  .hero_area .hero_bg_box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.7)));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.822));
+  }
+  .hero_area .hero_bg_box::after {
+    visibility: hidden;
+    content: "";
+    position: absolute;
+    top: 867px;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0.7)));
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0), #ecececa2, #ececece8, #ececec);
+  }
+  
 }
 
 .navbar-brand span {
@@ -730,6 +764,10 @@ margin-left: 1%;
   text-align: center;
 }
 
+.team_section .box .detail-box h5 {
+  text-align: center;
+}
+
 .team_section .btn-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -892,6 +930,7 @@ margin-left: 1%;
 }
 
 .client_section .client_container .detail-box h5 {
+  text-align: center;
   color: #1d1b28;
   margin-bottom: 15px;
 }
@@ -1028,6 +1067,18 @@ margin-left: 1%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+.about_section .heading_container h2 {
+  text-align: center;
+  margin: 0 auto;
+}
+.about_section .detail-box p {
+  text-align: center;
+  margin: 0 auto;
+}
+.about_section .detail-box {
+  text-align: center;
+  margin: 0 auto;
 }
 }
 
@@ -1489,5 +1540,100 @@ margin-left: 1%;
 @media (max-width: 768px) {
   .gallery {
       grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* Projeler Bölümü */
+.projects_section {
+  padding: 90px 20px;
+  background-size: cover; /* Resmin tam kaplamasını sağlar */
+  background-position: center; /* Ortalanmış pozisyon */
+  background-attachment: fixed; /* Parallax etkisi */
+  color: #fff; /* Yazı rengini beyaz yap */
+}
+
+.projects_background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%; /* Genişlik */
+  height: 100%;
+  z-index: -1; /* Arka plana gönder */
+  overflow: hidden;
+}
+
+.projects_background img.svg-background {
+  width: 100%; /* Tam genişlik */
+  height: 100%; /* Sayfa boyunca uzat */
+  object-fit: cover; /* SVG'nin orantısını koru */
+}
+
+.heading_project {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #000000;
+}
+
+.heading_project h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+.projects_gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  position: relative;
+}
+
+.project_card {
+  background: #ececece7;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project_card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project_card:hover {
+  transform: translateY(-5px);
+}
+
+.project_content {
+  padding: 20px;
+  text-align: center;
+}
+
+.project_content h4 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #004445;
+  margin-bottom: 10px;
+}
+
+.project_content p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Mobil Uyumu */
+@media (max-width: 768px) {
+  .projects_section {
+    padding: 60px 10px;
+  }
+
+  .heading_container h2 {
+    font-size: 28px;
+  }
+
+  .projects_gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .project_card img {
+    height: 150px;
   }
 }
