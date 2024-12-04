@@ -607,7 +607,9 @@ margin-left: 1%;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
-
+.service_section p {
+  text-align: center;
+}
 .service_section .box .detail-box {
   margin-top: 15px;
   text-align: center;
@@ -700,44 +702,121 @@ margin-left: 1%;
   background: #2c7873;
 }
 
-.about_section .row {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.about_section {
+  text-align: center;
+  justify-content: center; /* İçerikleri yatayda ortalar */
+  align-items: center; /* İçerikleri dikeyde ortalar */
 }
 
-.about_section .img-box {
-  position: relative;
-  overflow: hidden;
-  height: 100%;
+.about_section .img-box{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  margin-left: 50px;
+  margin-top: -20px;
 }
 
-.about_section .img-box img {
-  width: 100%;
+.about_section h2{
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 25px;
 }
 
-.about_section .detail-box p {
-  color: #1f1f1f;
-  margin-top: 15px;
-}
 
+.about_section .detail-box{
+  text-align: center;
+  margin-left: 250px;
+}
 .about_section .detail-box a {
   display: inline-block;
-  padding: 10px 35px;
+  padding: 10px 25px;
   background-color: #2c7873;
   color: #ffffff;
-  border-radius: 0px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-  border: 1px solid #2c7873;
-  margin-top: 15px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .about_section .detail-box a:hover {
   background-color: transparent;
   color: #2c7873;
+  border: 1px solid #2c7873;
 }
 
+.aboutbase_section {
+  background-color: #f5f5f5; /* Arka plan rengi */
+  padding: 50px 0; /* Yukarı ve aşağıdan boşluk */
+  display: flex;
+  justify-content: center; /* Yatayda ortala */
+  text-align: justify; /* Metni iki yana yasla */
+  width: 175%; /* Tam ekran genişlik */
+  height: 100%;
+}
+
+.aboutbase_section .container-fluid {
+  width: 100%; /* Genişliği tamamen yay */
+  max-width: 100%; /* Maksimum genişlik kaldırıldı */
+  padding: 20px; /* İçerik çevresine kenar boşlukları */
+}
+
+.aboutbase_section .heading_container h2 {
+  font-size: 36px; /* Başlık boyutu */
+  font-weight: bold; /* Kalın yazı */
+  color: #333; /* Başlık rengi */
+  margin-bottom: 20px; /* Başlık alt boşluğu */
+  text-align: center; /* Başlığı ortala */
+}
+
+.aboutbase_section .detail-box h6 {
+  font-size: 18px; /* Metin boyutu */
+  line-height: 1.8; /* Satır aralığı */
+  color: #555; /* Metin rengi */
+  text-align: justify; /* Metni iki yana yasla */
+  margin: 0; /* Kenar boşlukları sıfırla */
+  width: 100%; /* Tam ekran genişlik */
+}
+
+@media (max-width: 768px) {
+  .aboutbase_section .detail-box h6 {
+    font-size: 16px; /* Mobilde metin boyutunu küçült */
+    padding: 0 10px; /* Yanlarda boşluk bırak */
+  }
+
+  .aboutbase_section {
+    width: 100%; /* Tam ekran genişlik */
+    height: 100%;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .about_section p{
+    text-align: center;
+  }
+  .about_section {
+    flex-direction: column; /* İçerikleri alt alta sıralar */
+    text-align: center;
+  }
+
+  .about_section h2{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 0;
+  }
+
+  .about_section .detail-box{
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .about_section .img-box {
+    margin: 0 auto;
+    width: 350px;
+    height: 250px;
+    margin-left: 0 auto;
+  }
+}
 .team_section .box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -766,7 +845,9 @@ margin-left: 1%;
   padding: 25px 15px;
   text-align: center;
 }
-
+.team_section p{
+  text-align: center;
+}
 .team_section .box .detail-box h5 {
   text-align: center;
 }
@@ -1070,18 +1151,6 @@ margin-left: 1%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-}
-.about_section .heading_container h2 {
-  text-align: center;
-  margin: 0 auto;
-}
-.about_section .detail-box p {
-  text-align: center;
-  margin: 0 auto;
-}
-.about_section .detail-box {
-  text-align: center;
-  margin: 0 auto;
 }
 }
 
